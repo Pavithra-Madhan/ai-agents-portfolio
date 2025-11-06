@@ -1,0 +1,22 @@
+# Jupyter checkpoints (remove everything in this folder)
+.ipynb_checkpoints/
+
+# Only block checkpoint images, not all images
+.ipynb_checkpoints/*.png
+
+# Model files
+*.bin
+*.safetensors
+*.ckpt
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Environment
+.env
+.venv
+
+# OS
+.DS_Store
+Thumbs.db
