@@ -1,19 +1,30 @@
-# AI Agents Portfolio
+# AI Agents Experiments
 
-A collection of AI agent projects exploring tool use, reasoning, and practical problem-solving.
+A collection of experiments exploring different AI agent patterns and capabilities.
 
-## Projects
+## Current Experiments
 
-### Engineering Advisor
-An agent that helps troubleshoot technical problems using semantic search and a knowledge base of engineering solutions.
+### 🔍 RAG Engineering Advisor
+An agent that uses retrieval-augmented generation to provide technical solutions from an engineering knowledge base.
 
-**Features:**
-- BM25 retrieval for finding relevant solutions
-- Custom tool integration
-- Knowledge base of common engineering issues
-- Emergency procedures for critical situations
+**What it does:**
+- Searches through engineering problems and solutions using BM25
+- Returns relevant fixes, tools needed, and emergency procedures
+- Built with LangChain and custom tool integration
 
-**Example:**
-```python
-agent.run("My database is slow after a recent update")
-# Returns potential solutions, tools needed, and emergency steps
+### 🛠️ Multi-Tool Agent  
+An agent that can handle various tasks through different tools:
+
+**Capabilities:**
+- Get current time in different time zones
+- Generate images from text descriptions
+- Perform web searches for current information
+- Process real-time data
+
+## Technical Details
+
+**Tools & Frameworks:**
+- LangChain for agent orchestration
+- SmolAgents for tool integration
+- BM25 for semantic search
+- Various APIs for time, images, and web search
